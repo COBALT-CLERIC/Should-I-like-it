@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/COBALT-CLERIC/COBALT-CLERIC.png?label=ready&title=Ready)](https://waffle.io/COBALT-CLERIC/COBALT-CLERIC)
 # COBALT-CLERIC
 
 > Cannot decide if you should like the artist? Cobalt-Cleric will you valuable time by helping you making the decision easier and quicker.
