@@ -36,8 +36,8 @@ var ArtistSchema = new Schema({
 var Result = mongoose.model('results', ResultSchema);
 var Artist = mongoose.model('artists', ArtistSchema);
 
-module.exports = Artist;
-module.exports = Result;
-module.exports = db;
+module.exports.Artists = Artist;
+module.exports.Result = Result;
+module.exports.db = db;
 
 
