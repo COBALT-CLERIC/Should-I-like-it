@@ -5,11 +5,16 @@ var uri = 'https://api.mongolab.com/api/1/databases?apiKey=0Yd5feoZTPVXT9a2HgbBB
 ';
 
 //connect to MongoLabs database
-mongoose.connect(uri, function(error){
-	if(error){
-	console.log(error);
-	}
+mongoose.connect(uri);
+
+var db = mongoose.connection;
+
+db.on('error', console.error.bind(console, 'connection error:'));
+
+db.once('open', function(){
+	console.log('Mongodb connection open');
 });
+
 
 //Mongoose Schema definition
 var Schema = mongoose.Schema;
@@ -33,6 +38,6 @@ var Artist = mongoose.model('artists', ArtistSchema);
 
 module.exports = Artist;
 module.exports = Result;
-
+module.exports = db;
 
 
