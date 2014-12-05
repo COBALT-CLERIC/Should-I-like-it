@@ -1,5 +1,5 @@
 var express    = require('express');    // call express
-var Artist    = require('./dbserver.js');
+var Result = require('./results.js');
 
 var router = express.Router();
 
@@ -32,7 +32,13 @@ router.route('/artists')
 
 router.route('/artists/:artist_id')
   .get(function(req, res) {
-      res.send(req.params.artist_id)
+    Result.findOne({id: req.params.artist_id}, function(err, artist){
+      if(artist){
+        res.JSON(artist);
+      }else{
+        //search api function
+      }
+    })
       // Artist.findById(req.params.artist_id, function(err, artist) {
       //   if (err)
       //     res.send(err);
