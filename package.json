@@ -1,0 +1,41 @@
+{
+  "name": "COBALT-CLERIC",
+  "version": "0.0.1",
+  "description": "making decision easier",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/COBALT-CLERIC/COBALT-CLERIC.git"
+  },
+  "keywords": [
+    "should",
+    "I",
+    "artist",
+    "make decision",
+    "super awesome"
+  ],
+  "authors": [
+    "Kingsten Banh (kingstenbanh)",
+    "Krystal Raphael (Kdr18702)",
+    "Silvia Santos (chiaS)",
+    "William Sentance (willsen)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/COBALT-CLERIC/COBALT-CLERIC/issues"
+  },
+  "homepage": "https://github.com/COBALT-CLERIC/COBALT-CLERIC",
+  "dependencies": {
+    "bluebird": "^2.3.11",
+    "body-parser": "^1.10.0",
+    "express": "^4.10.4",
+    "express-partials": "^0.3.0",
+    "express-session": "^1.9.3",
+    "mongoose": "^3.8.20",
+    "pitchfork": "0.0.8",
+    "request": "^2.49.0"
+  }
+}
