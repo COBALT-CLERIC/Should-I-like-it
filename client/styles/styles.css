@@ -8169,8 +8169,10 @@ body {
   height: 100%;
   overflow: hidden;
   z-index: -1;
+  background-color: #000;
+  opacity: 0.95;
 }
-/* line 44, styles.scss */
+/* line 46, styles.scss */
 #background img {
   position: fixed;
   top: 0px;
@@ -8179,7 +8181,7 @@ body {
   width: 1200px;
 }
 @media screen and (min-width: 1200px) {
-  /* line 44, styles.scss */
+  /* line 46, styles.scss */
   #background img {
     top: auto;
     left: auto;
@@ -8187,13 +8189,13 @@ body {
     width: 100%;
   }
 }
-/* line 59, styles.scss */
+/* line 61, styles.scss */
 #background #status {
   display: block;
   height: 5em;
   width: 100%;
 }
-/* line 65, styles.scss */
+/* line 67, styles.scss */
 #background .name {
   font-size: 24px;
   font-weight: 700;
@@ -8202,13 +8204,13 @@ body {
   left: 50px;
   color: #FFF;
 }
-/* line 74, styles.scss */
+/* line 76, styles.scss */
 #background h1, #background h2 {
   width: 100%;
   color: #FFF;
   margin: 0;
 }
-/* line 80, styles.scss */
+/* line 82, styles.scss */
 #background h1 {
   text-transform: uppercase;
   font-weight: 700;
@@ -8216,21 +8218,21 @@ body {
   letter-spacing: 0.06em;
   margin-bottom: 10px;
 }
-/* line 88, styles.scss */
+/* line 90, styles.scss */
 #background h2 {
   font-size: 16px;
   width: 70%;
   margin: 0 auto;
 }
 @media screen and (min-width: 1200px) {
-  /* line 88, styles.scss */
+  /* line 90, styles.scss */
   #background h2 {
     width: 100%;
     margin: 0;
   }
 }
 
-/* line 101, styles.scss */
+/* line 103, styles.scss */
 #social {
   position: absolute;
   top: 55px;
@@ -8239,7 +8241,7 @@ body {
   cursor: pointer;
   z-index: 10;
 }
-/* line 109, styles.scss */
+/* line 111, styles.scss */
 #social a {
   float: left;
   width: 26px;
@@ -8247,46 +8249,46 @@ body {
   margin: 0 5px;
   text-indent: -9999px;
   background: url(../assets/img/social-sprite.png) no-repeat;
-  opacity: 0.5;
+  opacity: 0.8;
 }
-/* line 118, styles.scss */
+/* line 120, styles.scss */
 #social a:hover {
   opacity: 1.0;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (-min-device-pixel-ratio: 2) {
-  /* line 109, styles.scss */
+  /* line 111, styles.scss */
   #social a {
     background: url(../assets/img/social-sprite@2x.png) no-repeat;
     background-size: 76px 26px;
   }
 }
-/* line 127, styles.scss */
+/* line 129, styles.scss */
 #social a.facebook {
   background-position: 0px 0px;
   cursor: pointer;
 }
-/* line 132, styles.scss */
+/* line 134, styles.scss */
 #social a.twitter {
   background-position: -25px 0px;
   cursor: pointer;
 }
-/* line 137, styles.scss */
+/* line 139, styles.scss */
 #social a.instagram {
   background-position: -50px 0px;
   cursor: pointer;
 }
 
-/* line 145, styles.scss */
+/* line 147, styles.scss */
 .fancy-font {
   font-family: "Kaushan Script", cursive;
 }
 
-/* line 149, styles.scss */
+/* line 151, styles.scss */
 .search-page, .results-page {
   text-align: center;
   color: #FFF;
 }
-/* line 153, styles.scss */
+/* line 155, styles.scss */
 .search-page #title, .results-page #title {
   font-family: "Raleway", sans-serif;
   display: inline-block;
@@ -8296,19 +8298,19 @@ body {
   margin-top: 25%;
 }
 @media screen and (min-width: 1200px) {
-  /* line 153, styles.scss */
+  /* line 155, styles.scss */
   .search-page #title, .results-page #title {
     font-size: 112px;
     bottom: 50%;
     margin-top: 18%;
   }
 }
-/* line 169, styles.scss */
+/* line 171, styles.scss */
 .search-page .search-bar, .results-page .search-bar {
   width: 100%;
   margin: 0px auto;
 }
-/* line 174, styles.scss */
+/* line 176, styles.scss */
 .search-page .search-box, .results-page .search-box {
   font-size: 24px;
   width: 420px;
@@ -8318,16 +8320,16 @@ body {
   padding: 30px 15px;
   outline: none;
 }
-/* line 184, styles.scss */
+/* line 186, styles.scss */
 .search-page input[type=search]:focus, .search-page input:active, .results-page input[type=search]:focus, .results-page input:active {
   outline: none;
 }
-/* line 188, styles.scss */
+/* line 190, styles.scss */
 .search-page input, .results-page input {
   display: inline;
   border: none;
 }
-/* line 193, styles.scss */
+/* line 195, styles.scss */
 .search-page .search-button, .results-page .search-button {
   font-size: 24px;
   height: 60px;
@@ -8338,31 +8340,31 @@ body {
   left: -4px;
   top: -1px;
 }
-/* line 204, styles.scss */
+/* line 206, styles.scss */
 .search-page .search-button:hover, .search-page .again-button:hover, .results-page .search-button:hover, .results-page .again-button:hover {
   background-color: #2185C5;
 }
-/* line 208, styles.scss */
+/* line 210, styles.scss */
 .search-page .answer, .results-page .answer {
   font-size: 8em;
 }
 
-/* line 214, styles.scss */
+/* line 216, styles.scss */
 .results-page {
   text-align: center;
 }
-/* line 217, styles.scss */
+/* line 219, styles.scss */
 .results-page .answer {
   display: inline-block;
   margin-top: 21%;
 }
 @media screen and (min-width: 1200px) {
-  /* line 217, styles.scss */
+  /* line 219, styles.scss */
   .results-page .answer {
     margin-top: 12%;
   }
 }
-/* line 226, styles.scss */
+/* line 228, styles.scss */
 .results-page .again-button {
   font-size: 2em;
   background-color: #7ECEFD;
@@ -8370,7 +8372,7 @@ body {
   width: 180px;
 }
 
-/* line 235, styles.scss */
+/* line 238, styles.scss */
 .angucomplete-dropdown {
   opacity: 0.75;
   position: relative;
@@ -8378,13 +8380,13 @@ body {
   left: 74px;
 }
 @media screen and (min-width: 1200px) {
-  /* line 235, styles.scss */
+  /* line 238, styles.scss */
   .angucomplete-dropdown {
     left: 299px;
   }
 }
 
-/* line 247, styles.scss */
+/* line 249, styles.scss */
 .artistList {
   color: white;
   position: relative;

@@ -66,8 +66,8 @@ angular.module('angucomplete', [] )
               }else{
                   //data obj
                   AutoCompleteService.getResults(artistName, function(){
-                  //  AutoCompleteService.setAnswer((answer)? 'YES' : 'NO'); 
-                  //  AutoCompleteService.setInfo() 
+                  //  AutoCompleteService.setAnswer((answer)? 'YES' : 'NO');
+                  //  AutoCompleteService.setInfo()
                     window.location.href = '#/results';
                   });
 

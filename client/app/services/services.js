@@ -21,7 +21,7 @@ angular.module('shouldIApp.services', [])
             url: '/api/artists/'+ artist
           }).then(function(res){
             //set data right away
-            console.log('urlllll',res.data.url);
+            console.log('url: ',res.data.url);
             setInfo({url: res.data.url, cover: res.data.cover});
             setAnswer((res.data.answer)? 'YES' : 'NO');
             callback();
@@ -41,8 +41,8 @@ angular.module('shouldIApp.services', [])
   var setAnswer = function(ans){
     console.log('setting answer to '+ ans);
     answer = ans;
-  }
-  return {  
+  };
+  return {
             getInfo: getInfo,
             setInfo: setInfo,
             getSource: getSource,
