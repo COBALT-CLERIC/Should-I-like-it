@@ -1,14 +1,16 @@
 var Result = require('./results.js');
-
+var strip = require('./strip.js');
 var saveResult = function (data, callback) {
   //creates new instance of result
+
   var artist = data.artistName.toLowerCase();
   var newResult = new Result({
-    artistName: artist,
+    artistName: strip(artist),
 	url: data.url,
     timestamp: data.timestamp,
     rating: data.rating
   });
+  console.log(newResult);
 
   //saves result to database
   newResult.save(callback);
