@@ -36,6 +36,7 @@
     "express-session": "^1.9.3",
     "mongoose": "^3.8.20",
     "pitchfork": "0.0.8",
-    "request": "^2.49.0"
+    "request": "^2.49.0",
+    "grunt-cli": "^0.1.13"
   }
 }
