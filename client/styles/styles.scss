@@ -1,0 +1,449 @@
+/*
+ Custom variables
+ */
+$main-font: 'Lato', sans-serif;
+$raleway: 'Raleway', sans-serif;
+$sub-font: 'Montserrat', sans-serif;
+$fancy-font: 'Kaushan Script', cursive;
+$font-size: 16px;
+
+$black: #000;
+$white: #FFF;
+$grey: #585c65;
+$mediumgrey: #9b9b9b;
+$lightgrey: #eeeeee;
+$blue: #3466a1;
+
+$padding: 10px;
+$margin: 10px;
+
+/*
+  Override Bootstrap variables
+ */
+$font-family-sans-serif: $main-font;
+
+@import 'bootstrap';
+
+* {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  color: $grey;
+  font-size: $font-size;
+}
+
+#background {
+  max-height: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+
+  img {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    margin-left: -600px;
+    width: 1200px;
+
+    @media screen and (min-width: $screen-lg) {
+      top: auto;
+      left: auto;
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  #status {
+    display: block;
+    height: 5em;
+    width: 100%;
+  }
+
+  .name {
+    font-size: $font-size*1.5;
+    font-weight: 700;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color: $white;
+  }
+
+  h1, h2 {
+    width: 100%;
+    color: $white;
+    margin: 0;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: $font-size*2;
+    letter-spacing: 0.06em;
+    margin-bottom: $margin;
+  }
+
+  h2 {
+    font-size: $font-size;
+    width: 70%;
+    margin: 0 auto;
+
+    @media screen and (min-width: $screen-lg) {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+}
+
+#social {
+  position: absolute;
+  top: 55px;
+  right: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 10;
+
+  a {
+    float: left;
+    width: 26px;
+    height: 26px;
+    margin: 0 5px;
+    text-indent: -9999px;
+    background: url(../assets/img/social-sprite.png) no-repeat;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1.0;
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (-min-device-pixel-ratio: 2) {
+      background: url(../assets/img/social-sprite@2x.png) no-repeat;
+      background-size: 76px 26px;
+    }
+
+    &.facebook {
+      background-position: 0px 0px;
+      cursor: pointer;
+    }
+
+    &.twitter {
+      background-position: -25px 0px;
+      cursor: pointer;
+    }
+
+    &.instagram {
+      background-position: -50px 0px;
+      cursor: pointer;
+    }
+
+  }
+}
+
+.fancy-font {
+  font-family: $fancy-font;
+}
+
+.search-page, .results-page {
+  text-align: center;
+  color: $white;
+
+  #title {
+    font-family: $raleway;
+    display: inline-block;
+    font-size: $font-size*6;
+    font-weight: 300;
+    z-index: 10;
+    margin-top: 25%;
+    // position: absolute;
+
+    @media screen and (min-width: $screen-lg) {
+      font-size: $font-size*7;
+      bottom: 50%;
+      margin-top: 18%;
+    }
+  }
+
+  .search-bar {
+    width: 100%;
+    margin: 0px auto;
+  }
+
+  .search-box {
+    font-size: $font-size*1.5;
+    width: 420px;
+    height: 40px;
+    color: #0f0f0f;
+    opacity: 0.75;
+    padding: $padding*3 $padding*1.5;
+    outline: none;
+  }
+
+  input[type=search]:focus, input:active {
+    outline: none;
+  }
+
+  input {
+    display: inline;
+    border: none;
+  }
+
+  .search-button {
+    font-size: $font-size*1.5;
+    height: 60px;
+    width: 120px;
+    background-color: #7ECEFD;
+    color: $white;
+    text-align: center;
+    left: -4px;
+    top: -1px;
+  }
+
+  .search-button:hover, .again-button:hover {
+    background-color: #2185C5;
+  }
+
+  .answer {
+    font-size: 8em;
+  }
+
+}
+
+.results-page {
+  text-align: center;
+
+  .answer {
+    display: inline-block;
+    margin-top: 21%;
+
+    @media screen and (min-width: $screen-lg) {
+      margin-top: 12%;
+    }
+  }
+
+  .again-button {
+    font-size: 2em;
+    background-color: #7ECEFD;
+    height: 60px;
+    width: 180px;
+  }
+
+}
+// Autocomplete Styles
+.angucomplete-dropdown {
+  opacity: 0.75;
+  position: relative;
+  top: 5px;
+  left: 74px;
+
+  @media screen and (min-width: $screen-lg) {
+    left: 299px;
+  }
+
+}
+
+.artistList {
+  color: white;
+  position: relative;
+  left: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

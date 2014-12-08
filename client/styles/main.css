@@ -1,5 +1,5 @@
 html, body {
-  background-color: #FAF1D3;
+  background-color: #FF7F66;
   color: #FFF8F8;
   font-family: 'Raleway', san-serif;
   height: 100%;
@@ -20,7 +20,7 @@ h1, h2, h3 {
 #background {
   position: relative;
   display: block;
-  background-color: #FF7F66;
+  background: ;
   height: 100%;
   width: 100%;
   z-index: 1;
