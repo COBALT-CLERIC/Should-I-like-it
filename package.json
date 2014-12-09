@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prestart": "bower install",
+    "prestart": "cd client;bower install;cd ..",
     "start": "node server.js"
   },
   "repository": {
