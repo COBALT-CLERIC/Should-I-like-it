@@ -1,8 +1,14 @@
-angular.module('shouldIApp.services', [])
-.factory('AutoCompleteService', function ($http) {
+'use strict';
+
+angular
+  .module('app.services', [])
+  .factory('search', search);
+
+function search ($http) {
   var answer = '?';
   var info = null;
-  var getSource = function(callback){
+
+  function getSource(callback){
     return $http({
             method: 'GET',
             url: '/api/artists'
@@ -11,11 +17,11 @@ angular.module('shouldIApp.services', [])
             res.data.results.forEach(function(artist){
               result.push({name: artist});
             });
-
             callback(result);
           });
-     };
-  var getResults = function(artist, callback){
+  }
+
+  function getResults (artist, callback){
     return $http({
             method: 'GET',
             url: '/api/artists/'+ artist
@@ -23,31 +29,38 @@ angular.module('shouldIApp.services', [])
             //set data right away
             console.log('url: ',res.data.url);
             setInfo({url: res.data.url, cover: res.data.cover});
-            setAnswer((res.data.answer)? 'YES' : 'NO');
+            setAnswer((res.data.answer) ? 'YES' : 'NO');
+            console.log('Answer: ', answer);
             callback();
           }).catch(function(){
             console.error('something screwed up');
           });
-  };
-  var setInfo = function(inf){
+  }
+
+  function setInfo (inf){
     info = inf;
-  };
-  var getInfo = function(){
+  }
+
+  function getInfo (){
     return info;
-  };
-  var getAnswer = function(){
+  }
+
+  function getAnswer(){
     return answer;
-  };
-  var setAnswer = function(ans){
+  }
+
+  function setAnswer (ans){
     console.log('setting answer to '+ ans);
     answer = ans;
+  }
+
+  var service = {
+    getSource: getSource,
+    getResults: getResults,
+    setInfo: setInfo,
+    getInfo: getInfo,
+    getAnswer: getAnswer
   };
-  return {
-            getInfo: getInfo,
-            setInfo: setInfo,
-            getSource: getSource,
-            getResults: getResults,
-            getAnswer: getAnswer,
-            setAnswer: setAnswer
-          };
-});
+
+  return service;
+}
