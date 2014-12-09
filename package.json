@@ -2,7 +2,7 @@
   "name": "COBALT-CLERIC",
   "version": "0.0.1",
   "description": "making decision easier",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "postinstall": "bower install"
   },
