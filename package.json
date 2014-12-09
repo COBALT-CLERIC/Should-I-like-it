@@ -6,30 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prestart": "bower install",
-    "start": "server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/COBALT-CLERIC/COBALT-CLERIC.git"
+    "url": "https://github.com/kdr18702/COBALT-CLERIC.git"
   },
-  "keywords": [
-    "should",
-    "I",
-    "artist",
-    "make decision",
-    "super awesome"
-  ],
-  "authors": [
-    "Kingsten Banh (kingstenbanh)",
-    "Krystal Raphael (Kdr18702)",
-    "Silvia Santos (chiaS)",
-    "William Sentance (willsen)"
-  ],
+  "authors": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/COBALT-CLERIC/COBALT-CLERIC/issues"
+    "url": "https://github.com/kdr18702/COBALT-CLERIC/issues"
   },
-  "homepage": "https://github.com/COBALT-CLERIC/COBALT-CLERIC",
+  "homepage": "https://github.com/kdr18702/COBALT-CLERIC",
   "dependencies": {
     "bluebird": "^2.3.11",
     "body-parser": "^1.10.0",
@@ -38,8 +26,6 @@
     "express-session": "^1.9.3",
     "mongoose": "^3.8.20",
     "pitchfork": "0.0.8",
-    "request": "^2.49.0",
-    "grunt-cli": "^0.1.13",
-    "bower": "latest"
+    "request": "^2.49.0"
   }
 }
