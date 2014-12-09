@@ -1,6 +1,6 @@
 /*This is module from https://github.com/darylrowland/angucomplete with additional service and method*/
-angular.module('angucomplete', [] )
-    .directive('angucomplete', function ($parse, $http, $sce, $timeout, AutoCompleteService) {
+angular.module('app.angucomplete', [] )
+    .directive('angucomplete', function ($parse, $http, $sce, $timeout, search) {
     return {
         restrict: 'EA',
         scope: {
@@ -65,9 +65,9 @@ angular.module('angucomplete', [] )
                 $scope.isFound = false;
               }else{
                   //data obj
-                  AutoCompleteService.getResults(artistName, function(){
-                  //  AutoCompleteService.setAnswer((answer)? 'YES' : 'NO'); 
-                  //  AutoCompleteService.setInfo() 
+                  search.getResults(artistName, function(){
+                  //  search.setAnswer((answer)? 'YES' : 'NO');
+                  //  search.setInfo()
                     window.location.href = '#/results';
                   });
 

@@ -19,14 +19,11 @@
     border-color: #ececec;
     border-width: 1px;
     border-style: solid;
-    border-radius: 2px;
-    width: 250px;
+    width: 419px;
     padding: 6px;
     cursor: pointer;
     z-index: 9999;
-    /*top: 32px;
-    left: 0px;
-*/
+
     margin-top: -6px;
     background-color: #ffffff;
 }

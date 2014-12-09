@@ -9,14 +9,13 @@
   <link href="http://fonts.googleapis.com/css?family=Lato:400,700|Kaushan+Script|Montserrat" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Raleway:200,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="styles/styles.css">
-  <!-- <link rel="stylesheet" href="styles/main.css"> -->
   <link rel="stylesheet" href="styles/angucomplete.css">
 </head>
-<body ng-app="shouldIApp">
+<body ng-app="app">
 
   <div id="background">
     <div id="status">
-      <img src="assets/img/dark.jpg" alt="Darkroom">
+      <img src="https://ununsplash.imgix.net/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20(1%20of%201)-5.jpg?q=75&fm=jpg&s=51271112596da893693f98a61c47b619" alt="Darkroom">
       <div class="name fancy-font">Should I</div>
       <div id="social">
         <a class="facebook" href="#">Facebook</a>
@@ -25,7 +24,7 @@
       </div>
     </div>
   </div>
-    <div ui-view></div>
+  <div ui-view></div>
 
   <!-- Client-side Requirements -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -41,10 +40,10 @@
 
 
   <!-- Angular Modules -->
-  <script src="app/autoComplete/angucomplete.js"></script>
-  <script src="app/autoComplete/autoComplete.js"></script>
+  <script src="app/search/angucomplete.directive.js"></script>
+  <script src="app/search/search.controller.js"></script>
   <script src="app/services/services.js"></script>
-  <script src="app/results/results.js"></script>
+  <script src="app/results/results.controller.js"></script>
   <script src="app/app.js"></script>
 
 </body>

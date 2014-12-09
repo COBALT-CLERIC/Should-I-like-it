@@ -1,24 +1,26 @@
 'use strict';
 
-angular.module('shouldIApp', [
+angular
+  .module('app', [
 	 'ui.router',
-   'angucomplete',
-   'shouldIApp.autoComplete',
-   'shouldIApp.services',
-   'shouldIApp.results'
+   'app.angucomplete',
+   'app.search',
+   'app.services',
+   'app.results'
 	 ])
+  .config(config);
 
-.config(function($stateProvider, $urlRouterProvider) {
+function config($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/');
   $stateProvider
     .state('home', {
       url: '/',
-      templateUrl: 'app/autoComplete/autoComplete.html',
-      controller: 'Controller'
+      templateUrl: 'app/search/searchPage.html',
+      controller: 'Search'
     })
     .state('result', {
       url: '/results',
       templateUrl: 'app/results/resultsPage.html',
-      controller: 'resultsController'
+      controller: 'Results'
     });
-});
+}
