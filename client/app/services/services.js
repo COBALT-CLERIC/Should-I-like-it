@@ -4,7 +4,7 @@ angular
   .module('app.services', [])
   .factory('search', search);
 
-function search ($http) {
+function search ($http, $state) {
   var answer = '?';
   var info = null;
 
@@ -30,8 +30,10 @@ function search ($http) {
             console.log('url: ',res.data.url);
             setInfo({url: res.data.url, cover: res.data.cover});
             setAnswer((res.data.answer) ? 'YES' : 'NO');
-            console.log('Answer: ', answer);
+            console.log('data', res.data);
             callback();
+            getAnswer();
+            $state.go('result')
           }).catch(function(){
             console.error('something screwed up');
           });

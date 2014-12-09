@@ -4,15 +4,18 @@ angular
   .module('app.results', [])
   .controller('Results', Results);
 
-Results.$inject = ['$scope', 'search'];
+Results.$inject = ['$scope', 'search', '$state'];
 
-function Results ($scope, search) {
-  // var vm = this;
-  // $scope.answer = search.answer;
-  console.log('it runs');
+function Results ($scope, search, $state) {
+
   $scope.answer = search.getAnswer();
-  console.log('$scope.answer', $scope.answer);
   $scope.message = '';
+  // function stateRedirect () {
+  //   $state.go('result');
+  // }
+
+  // $scope.test = stateRedirect;
+
   //$scope.info.url, $scope.info.cover;
   $scope.displayInfo = displayInfo;
 

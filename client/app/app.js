@@ -21,7 +21,6 @@ function config($stateProvider, $urlRouterProvider) {
     .state('result', {
       url: '/results',
       templateUrl: 'app/results/resultsPage.html',
-      controller: 'Results',
-      controllerAs: 'vm'
+      controller: 'Results'
     });
 }

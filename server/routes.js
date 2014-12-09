@@ -67,11 +67,11 @@ router.route('/artists/:artist_id')
           console.log('in pitch');
           var answer = false;
           console.log(data);
-          if (data.rating >8) {
+          if (data.rating > 7) {
             answer = true;
           }
           else { answer = false; }
-          
+
           var artistInfo = {
             'answer' : answer,
             'url' : data.url,
