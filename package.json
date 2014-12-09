@@ -2,14 +2,10 @@
   "name": "COBALT-CLERIC",
   "version": "0.0.1",
   "description": "making decision easier",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "bower cache clean && bower install"
-  },
+  "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/COBALT-CLERIC/COBALT-CLERIC.git"
+    "url": "https://github.com/kdr18702/COBALT-CLERIC.git"
   },
   "keywords": [
     "should",
@@ -26,9 +22,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/COBALT-CLERIC/COBALT-CLERIC/issues"
+    "url": "https://github.com/kdr18702/COBALT-CLERIC/issues"
   },
-  "homepage": "https://github.com/COBALT-CLERIC/COBALT-CLERIC",
+  "homepage": "https://github.com/kdr18702/COBALT-CLERIC",
   "dependencies": {
     "bluebird": "^2.3.11",
     "body-parser": "^1.10.0",
@@ -38,6 +34,7 @@
     "mongoose": "^3.8.20",
     "pitchfork": "0.0.8",
     "request": "^2.49.0",
-    "grunt-cli": "^0.1.13"
+    "grunt-cli": "^0.1.13",
+    "bower": "latest"
   }
 }
