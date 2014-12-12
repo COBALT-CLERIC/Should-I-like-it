@@ -1,9 +1,9 @@
 
 var express = require('express');    // call express
 var app = express();
-var router = require('server/routes.js');
+var router = require('./server/routes.js');
 var path = require('path');
-var connection = require('server/connection.js');
+var connection = require('./server/connection.js');
 
 var port = process.env.PORT || 8080;
 
