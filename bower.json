@@ -8,14 +8,7 @@
     "Silvia Santos (chiaS)",
     "William Sentance (willsen)"
   ],
-  "description": "making decision easier",
-  "main": "index.js",
-  "keywords": [
-    "shoud",
-    "I"
-  ],
   "license": "MIT",
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
